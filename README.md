@@ -12,6 +12,10 @@ Samo zadanie jest zaproszeniem do eksperymentów – interfejs, nawigacja, ew. d
 
 # Realizacja
 
+Ekran główny | Wybór stacji | Wpisywanie frazy
+--- | --- | ---
+![alt text](https://github.com/Decybel07/KOLEO/blob/main/Assets/1.png) | ![alt text](https://github.com/Decybel07/KOLEO/blob/main/Assets/2.png) | ![alt text](https://github.com/Decybel07/KOLEO/blob/main/Assets/3.png)
+
 1. Przy uruchomieniu aplikacji, ta probuje zaktualizować dane o stacjach oraz słowach kluczowych.
     * W przypadku braku internetu lub błędu z serwera, uzywany jest wczesniej cache (max 24h).
     * Zauważyłem, że zapytania zwracają nagłówki `etag`, `Cache-Control` (również na 24h) dlatego uzyłem logiki buforowania zgodną z protokołem HTTP. [(Więcej szczegółów)](https://link-url-here.org](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/useprotocolcachepolicy)https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/useprotocolcachepolicy)
