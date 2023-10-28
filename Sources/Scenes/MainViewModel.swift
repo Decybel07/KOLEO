@@ -40,6 +40,7 @@ private extension MainViewModel {
     
     func binding() {
         self.bindFetchingData()
+        self.bindDistance()
     }
     
     func bindFetchingData() {
