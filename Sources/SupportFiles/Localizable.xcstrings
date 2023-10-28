@@ -1,0 +1,182 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "connection" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connection"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Połączenie"
+          }
+        }
+      }
+    },
+    "destination.label" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "B:"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "B:"
+          }
+        }
+      }
+    },
+    "destination.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrival station"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrival koncowa"
+          }
+        }
+      }
+    },
+    "distance" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Distance"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dystans"
+          }
+        }
+      }
+    },
+    "error.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Błąd"
+          }
+        }
+      }
+    },
+    "loading.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading data..."
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ładowanie danych..."
+          }
+        }
+      }
+    },
+    "retry" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spróbuj ponownie"
+          }
+        }
+      }
+    },
+    "selectBothStations" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select both stations"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proszę wybrać obie stacje"
+          }
+        }
+      }
+    },
+    "source.label" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A:"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A:"
+          }
+        }
+      }
+    },
+    "source.title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Departure station"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stacja początkowa"
+          }
+        }
+      }
+    },
+    "title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KOLEO"
+          }
+        },
+        "pl-PL" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "KOLEO"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

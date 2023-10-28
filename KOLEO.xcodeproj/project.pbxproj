@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D248F9A2AEBC2CA007600F3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248F992AEBC2CA007600F3 /* App.swift */; };
+		2D248F9C2AEBC2CA007600F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248F9B2AEBC2CA007600F3 /* MainView.swift */; };
+		2D248F9E2AEBC2CB007600F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D248F9D2AEBC2CB007600F3 /* Assets.xcassets */; };
+		2D248FC72AEBC513007600F3 /* StationRepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FC62AEBC513007600F3 /* StationRepositoryService.swift */; };
+		2D248FC92AEBC723007600F3 /* StationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FC82AEBC722007600F3 /* StationDTO.swift */; };
+		2D248FCB2AEBC83C007600F3 /* ApiStationRepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FCA2AEBC83C007600F3 /* ApiStationRepositoryService.swift */; };
+		2D248FCF2AEBE628007600F3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FCE2AEBE628007600F3 /* NetworkService.swift */; };
+		2D248FD12AEBE64A007600F3 /* CachedNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FD02AEBE64A007600F3 /* CachedNetworkService.swift */; };
+		2D248FD32AEC09A5007600F3 /* StationKeywordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FD22AEC09A5007600F3 /* StationKeywordDTO.swift */; };
+		2D248FD62AEC1771007600F3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FD52AEC1771007600F3 /* MainViewModel.swift */; };
+		2D248FDB2AEC2165007600F3 /* StubStationRepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FDA2AEC2165007600F3 /* StubStationRepositoryService.swift */; };
+		2D248FDE2AEC26A5007600F3 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FDD2AEC26A5007600F3 /* StationPickerView.swift */; };
+		2D248FE02AEC26AE007600F3 /* StationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FDF2AEC26AE007600F3 /* StationPickerViewModel.swift */; };
+		2D248FE32AEC7A3F007600F3 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FE22AEC7A3F007600F3 /* Station.swift */; };
+		2D248FE62AEC863B007600F3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2D248FE52AEC863B007600F3 /* Localizable.xcstrings */; };
+		2D248FE82AECA092007600F3 /* StationKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FE72AECA092007600F3 /* StationKeyword.swift */; };
+		2D248FEA2AED189E007600F3 /* StationKeywordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FE92AED189E007600F3 /* StationKeywordTests.swift */; };
+		2D248FEC2AED2063007600F3 /* StationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248FEB2AED2063007600F3 /* StationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D248FA72AEBC2CB007600F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D248F8E2AEBC2CA007600F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D248F952AEBC2CA007600F3;
+			remoteInfo = KOLEO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D248F962AEBC2CA007600F3 /* KOLEO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOLEO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D248F992AEBC2CA007600F3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		2D248F9B2AEBC2CA007600F3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2D248F9D2AEBC2CB007600F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D248FA62AEBC2CB007600F3 /* KOLEOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOLEOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D248FC62AEBC513007600F3 /* StationRepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRepositoryService.swift; sourceTree = "<group>"; };
+		2D248FC82AEBC722007600F3 /* StationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDTO.swift; sourceTree = "<group>"; };
+		2D248FCA2AEBC83C007600F3 /* ApiStationRepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStationRepositoryService.swift; sourceTree = "<group>"; };
+		2D248FCE2AEBE628007600F3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2D248FD02AEBE64A007600F3 /* CachedNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedNetworkService.swift; sourceTree = "<group>"; };
+		2D248FD22AEC09A5007600F3 /* StationKeywordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationKeywordDTO.swift; sourceTree = "<group>"; };
+		2D248FD52AEC1771007600F3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2D248FDA2AEC2165007600F3 /* StubStationRepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubStationRepositoryService.swift; sourceTree = "<group>"; };
+		2D248FDD2AEC26A5007600F3 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		2D248FDF2AEC26AE007600F3 /* StationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerViewModel.swift; sourceTree = "<group>"; };
+		2D248FE22AEC7A3F007600F3 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		2D248FE52AEC863B007600F3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		2D248FE72AECA092007600F3 /* StationKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationKeyword.swift; sourceTree = "<group>"; };
+		2D248FE92AED189E007600F3 /* StationKeywordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationKeywordTests.swift; sourceTree = "<group>"; };
+		2D248FEB2AED2063007600F3 /* StationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D248F932AEBC2CA007600F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D248FA32AEBC2CB007600F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D248F8D2AEBC2CA007600F3 = {
+			isa = PBXGroup;
+			children = (
+				2D248F982AEBC2CA007600F3 /* Sources */,
+				2D248FA92AEBC2CB007600F3 /* Tests */,
+				2D248F972AEBC2CA007600F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D248F972AEBC2CA007600F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D248F962AEBC2CA007600F3 /* KOLEO.app */,
+				2D248FA62AEBC2CB007600F3 /* KOLEOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D248F982AEBC2CA007600F3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D248F992AEBC2CA007600F3 /* App.swift */,
+				2D248FD42AEC0B25007600F3 /* Scenes */,
+				2D248FE12AEC7A1E007600F3 /* Models */,
+				2D248FC32AEBC368007600F3 /* Services */,
+				2D248FE42AEC8621007600F3 /* SupportFiles */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D248FA92AEBC2CB007600F3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FEB2AED2063007600F3 /* StationTests.swift */,
+				2D248FE92AED189E007600F3 /* StationKeywordTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2D248FC32AEBC368007600F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FC42AEBC4C0007600F3 /* API */,
+				2D248FC52AEBC4D2007600F3 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D248FC42AEBC4C0007600F3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FC62AEBC513007600F3 /* StationRepositoryService.swift */,
+				2D248FCA2AEBC83C007600F3 /* ApiStationRepositoryService.swift */,
+				2D248FDA2AEC2165007600F3 /* StubStationRepositoryService.swift */,
+				2D248FCD2AEBC84C007600F3 /* Models */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2D248FC52AEBC4D2007600F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FCE2AEBE628007600F3 /* NetworkService.swift */,
+				2D248FD02AEBE64A007600F3 /* CachedNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2D248FCD2AEBC84C007600F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FC82AEBC722007600F3 /* StationDTO.swift */,
+				2D248FD22AEC09A5007600F3 /* StationKeywordDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D248FD42AEC0B25007600F3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2D248F9B2AEBC2CA007600F3 /* MainView.swift */,
+				2D248FD52AEC1771007600F3 /* MainViewModel.swift */,
+				2D248FDC2AEC2607007600F3 /* StationPicker */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2D248FDC2AEC2607007600F3 /* StationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FDD2AEC26A5007600F3 /* StationPickerView.swift */,
+				2D248FDF2AEC26AE007600F3 /* StationPickerViewModel.swift */,
+			);
+			path = StationPicker;
+			sourceTree = "<group>";
+		};
+		2D248FE12AEC7A1E007600F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FE22AEC7A3F007600F3 /* Station.swift */,
+				2D248FE72AECA092007600F3 /* StationKeyword.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D248FE42AEC8621007600F3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2D248FE52AEC863B007600F3 /* Localizable.xcstrings */,
+				2D248F9D2AEBC2CB007600F3 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D248F952AEBC2CA007600F3 /* KOLEO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D248FBA2AEBC2CB007600F3 /* Build configuration list for PBXNativeTarget "KOLEO" */;
+			buildPhases = (
+				2D248F922AEBC2CA007600F3 /* Sources */,
+				2D248F932AEBC2CA007600F3 /* Frameworks */,
+				2D248F942AEBC2CA007600F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KOLEO;
+			productName = KOLEO;
+			productReference = 2D248F962AEBC2CA007600F3 /* KOLEO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D248FA52AEBC2CB007600F3 /* KOLEOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D248FBD2AEBC2CB007600F3 /* Build configuration list for PBXNativeTarget "KOLEOTests" */;
+			buildPhases = (
+				2D248FA22AEBC2CB007600F3 /* Sources */,
+				2D248FA32AEBC2CB007600F3 /* Frameworks */,
+				2D248FA42AEBC2CB007600F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D248FA82AEBC2CB007600F3 /* PBXTargetDependency */,
+			);
+			name = KOLEOTests;
+			productName = KOLEOTests;
+			productReference = 2D248FA62AEBC2CB007600F3 /* KOLEOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D248F8E2AEBC2CA007600F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2D248F952AEBC2CA007600F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					2D248FA52AEBC2CB007600F3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 2D248F952AEBC2CA007600F3;
+					};
+				};
+			};
+			buildConfigurationList = 2D248F912AEBC2CA007600F3 /* Build configuration list for PBXProject "KOLEO" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pl-PL",
+			);
+			mainGroup = 2D248F8D2AEBC2CA007600F3;
+			productRefGroup = 2D248F972AEBC2CA007600F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D248F952AEBC2CA007600F3 /* KOLEO */,
+				2D248FA52AEBC2CB007600F3 /* KOLEOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D248F942AEBC2CA007600F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D248FE62AEC863B007600F3 /* Localizable.xcstrings in Resources */,
+				2D248F9E2AEBC2CB007600F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D248FA42AEBC2CB007600F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D248F922AEBC2CA007600F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D248FD32AEC09A5007600F3 /* StationKeywordDTO.swift in Sources */,
+				2D248FE02AEC26AE007600F3 /* StationPickerViewModel.swift in Sources */,
+				2D248FC92AEBC723007600F3 /* StationDTO.swift in Sources */,
+				2D248FCB2AEBC83C007600F3 /* ApiStationRepositoryService.swift in Sources */,
+				2D248F9C2AEBC2CA007600F3 /* MainView.swift in Sources */,
+				2D248FE32AEC7A3F007600F3 /* Station.swift in Sources */,
+				2D248FD12AEBE64A007600F3 /* CachedNetworkService.swift in Sources */,
+				2D248FC72AEBC513007600F3 /* StationRepositoryService.swift in Sources */,
+				2D248FDB2AEC2165007600F3 /* StubStationRepositoryService.swift in Sources */,
+				2D248FCF2AEBE628007600F3 /* NetworkService.swift in Sources */,
+				2D248FE82AECA092007600F3 /* StationKeyword.swift in Sources */,
+				2D248F9A2AEBC2CA007600F3 /* App.swift in Sources */,
+				2D248FDE2AEC26A5007600F3 /* StationPickerView.swift in Sources */,
+				2D248FD62AEC1771007600F3 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D248FA22AEBC2CB007600F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D248FEC2AED2063007600F3 /* StationTests.swift in Sources */,
+				2D248FEA2AED189E007600F3 /* StationKeywordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D248FA82AEBC2CB007600F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D248F952AEBC2CA007600F3 /* KOLEO */;
+			targetProxy = 2D248FA72AEBC2CB007600F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D248FB82AEBC2CB007600F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D248FB92AEBC2CB007600F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D248FBB2AEBC2CB007600F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9YB6F3PT7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobrowski.adrian.KOLEO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D248FBC2AEBC2CB007600F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9YB6F3PT7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobrowski.adrian.KOLEO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D248FBE2AEBC2CB007600F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9YB6F3PT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobrowski.adrian.KOLEOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOLEO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOLEO";
+			};
+			name = Debug;
+		};
+		2D248FBF2AEBC2CB007600F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J9YB6F3PT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobrowski.adrian.KOLEOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KOLEO.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KOLEO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D248F912AEBC2CA007600F3 /* Build configuration list for PBXProject "KOLEO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D248FB82AEBC2CB007600F3 /* Debug */,
+				2D248FB92AEBC2CB007600F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D248FBA2AEBC2CB007600F3 /* Build configuration list for PBXNativeTarget "KOLEO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D248FBB2AEBC2CB007600F3 /* Debug */,
+				2D248FBC2AEBC2CB007600F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D248FBD2AEBC2CB007600F3 /* Build configuration list for PBXNativeTarget "KOLEOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D248FBE2AEBC2CB007600F3 /* Debug */,
+				2D248FBF2AEBC2CB007600F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D248F8E2AEBC2CA007600F3 /* Project object */;
+}
